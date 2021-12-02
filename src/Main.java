@@ -4,11 +4,22 @@ import java.util.concurrent.ExecutionException;
 import java.util.stream.Collectors;
 
 public class Main {
+
     public static void main(String[] args) {
 
         final List<Integer> a1 = Arrays.asList(10, 2, 2, 3, 4, 5, 6, 7, 8, 9, 120, 12, 11, 20, 33);
-        final List<Integer> a2 = Arrays.asList(10, 20, 30, 40, 50, 600, 700, 800, 900, 1000);
-        final List<Integer> a3 = Arrays.asList(10, 200, 300, 400, 500, 600, 700, 800, 900, 1000);
+        final List<Integer> a2 = Arrays.asList(10, 25, 30, 40, 50, 60, 70, 85, 90, 100, 101, 102, 103);
+        final List<Integer> a3 = Arrays.asList(10, 20, 30, 40, 50, 60, 70, 80, 90, 100);
+
+//        final List<Integer> a1 = new ArrayList();
+//        final List<Integer> a2 = new ArrayList();
+//        final List<Integer> a3 = new ArrayList();
+//
+//        for(int i = 0; i < 1000; i++) {
+//            a1.add(1 + (int) (Math.random() * 10));
+//            a2.add(1 + (int) (Math.random() * 100));
+//            a3.add(1 + (int) (Math.random() * 100));
+//        }
 
         CompletableFuture<List<Integer>> firstFuture, secondFuture, thirdFuture, resultFuture;
 
